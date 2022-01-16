@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap');
+
+:root {
+    --merriweather: 'Merriweather', serif;
+    --inter: 'Inter', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -16,8 +23,6 @@ time, mark, audio, video {
 	font-size: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap');
-
 * {
     box-sizing: border-box;
 }
@@ -25,11 +30,11 @@ time, mark, audio, video {
 .container {
     width: 1440px;
     margin: 0 auto;
-    background-color: #000000;
+    background-color: #000000; 
 }
 
 html {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--inter);
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -37,6 +42,7 @@ html {
     color: #FFFFFF;
 }
 
+/* start styles for header */
 .header__container {
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +54,13 @@ html {
     width: 50px;
     height: 50px;
     margin-left: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;  
+    transition: 0.3s;
+}
+
+.logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 .nav__top {
@@ -73,7 +86,6 @@ html {
     line-height: 5.0rem;
     text-decoration: none;
     color: #FFFFFF;
-    letter-spacing: 0.85px;
 }
 
 .lang {
@@ -90,3 +102,56 @@ html {
 .lang_item {
     color: #BDAE82;
 }
+/* end styles for header */
+
+/* start styles for hero */
+.hero__container {
+    background: url(assets/img/bg.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: -90px;
+}
+
+.hero__title {
+    padding-top: 250px;
+    margin-left: 80px;
+    padding-bottom: 336px; 
+    width: 500px;
+}
+
+/* for all h1-h2 **/
+.section__title {
+    font-family: var(--merriweather);
+    font-weight: 700;
+    color: #BDAE82;
+}
+/*end for all h1-h2*/
+
+.main__title {
+    font-size: 6.0rem;
+    line-height: 12.0rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+
+}
+
+.hero p {
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    width: 470px;
+    margin-bottom: 25px;
+}
+
+.gold_button {
+    width: 220px;
+    height: 55px;
+    padding: 0;
+    font-family: var(--inter);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    color: #000000;
+    background-color: #BDAE82;
+    border: 0;
+}
+/* end styles for hero */
