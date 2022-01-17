@@ -57,6 +57,7 @@ html {
     margin-left: 20px;
     background-size: contain;
     background-repeat: no-repeat;  
+    cursor: pointer;
     transition: color 0.5s;
 }
 
@@ -87,6 +88,10 @@ html {
     line-height: 5.0rem;
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.nav__link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 .lang {
@@ -341,6 +346,7 @@ html {
 /*start styles for contacts*/
 .contacts {
     position: relative;
+    margin: 0;
 }
 
 .cotacts__info {
@@ -393,3 +399,45 @@ html {
     padding-left: 18px;
 }
 /*end styles for contacts*/
+
+/*end styles for footer*/
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 0 20px;
+}
+
+.footer__info, .link_RSS {
+    display: flex;
+    gap: 20px;
+    font-size: 2.0rem;
+    line-height: 5.0rem;
+}
+
+.footer__info {
+    padding-right: 13px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.social__network {
+    display: flex;
+    width: 188px;
+    gap: 20px;
+}
+
+.footer_link {
+    cursor: pointer;
+    transition:color 0.5s;
+}
+
+.footer_link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+/*end styles for footer*/
