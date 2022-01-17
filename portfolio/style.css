@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap');
+
+:root {
+    --merriweather: 'Merriweather', serif;
+    --inter: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, body,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;    
+}
+
+html {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #FFFFFF;
+    background-color: #000000; 
+    scroll-behavior: smooth; 
+}
+
+/* start styles for header */
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 90px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;  
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.nav__top {
+    margin-left: auto;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__link {
+    font-size: 2.0rem;
+    line-height: 5.0rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav__link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.lang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 2.0em;
+    line-height: 5.0rem;
+    font-weight: 700;
+    width: 70px;
+    margin-right: 20px;
+}
+
+.lang_item {
+    cursor: pointer;
+}
+
+.ru:hover {
+    color: #BDAE82;
+}
+
+.en {
+    color: #BDAE82;
+}
+/* end styles for header */
+
+.section {
+    margin-bottom: 100px;
+}
+
+/* start styles for hero */
+.hero {
+    margin-bottom: 0px;
+}
+
+.hero__container {
+    background: url(assets/img/bg.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: -90px;
+    margin-bottom: 94px;
+}
+
+.hero__title {
+    padding-top: 250px;
+    margin-left: 80px;
+    padding-bottom: 336px; 
+    width: 500px;
+}
+
+.main__title {
+    font-family: var(--merriweather);
+    font-weight: 700;
+    font-size: 6.0rem;
+    line-height: 12.0rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+
+}
+
+.hero p {
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    width: 470px;
+    margin-bottom: 25px;
+}
+
+.gold_button {
+    width: 220px;
+    height: 55px;
+    padding: 0;
+    font-family: inherit;
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    color: #000000;
+    background-color: #BDAE82;
+    border: 0;
+    cursor: pointer;
+    transition:color 0.5s;
+}
+
+.gold_button:hover {
+    color: #FFFFFF;
+}
+/* end styles for hero */
+
+/*start styles for skills*/
+.section__title {
+    font-family: var(--merriweather);
+    font-weight: 700;
+    font-size: 4.0rem;
+    line-height: 8.0rem;
+    color: #BDAE82;
+    background-color: #000000;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.title__wrapper {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+    margin-bottom: 60px;
+}
+
+.skills__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 320px;
+}
+
+.skills__icon {
+    padding-bottom: 50px;
+}
+.skills_item h4 {
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    width: 280px;
+    padding-bottom: 20px;
+}
+
+.skills__items p {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    padding: 0 20px 10px;
+}
+/*end styles for skills*/
+
+/*start styles for portfolios*/
+.seasons {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.black_button {
+    width: 220px;
+    height: 55px;
+    padding: 0;
+    font-family: inherit;
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    color: #BDAE82;
+    background-color: transparent;
+    border: 2px solid #BDAE82;
+    cursor: pointer;
+    transition:color 0.5s;
+}
+
+.black_button:hover {
+    color: #FFFFFF;
+}
+
+.photo {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+.autumn__image {
+    max-width: 450px;
+    max-height: 560px;
+}
+/*end styles for portfolio*/
+
+/*start styles for video*/
+.video__player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video__scrin {
+    padding: 0 20px;
+    max-width: 1400px;
+    max-height: 705px;
+}
+
+.video__button {
+    position: absolute;
+    cursor: pointer;
+    transition:color 0.5s;
+}
+
+.video__button:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+/*end styles for video*/
+
+/*start styles for price*/
+.price__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 25px;
+}
+
+.one__price {
+    width: 450px;
+    height: 505px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #BDAE82;
+}    
+
+.price__title {
+    font-family: var(--merriweather);
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 5.6rem;
+    padding-top: 41px;
+    padding-bottom: 20px;
+}
+
+.price__service {
+    font-family: var(--merriweather);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 4.8rem;
+    color: #BDAE82;
+    padding-bottom: 20px;
+}
+.one__price span {
+    display: block;
+}
+
+.price__text {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    text-align: center;
+}
+
+.price__description {
+    padding-bottom: 40px;
+}
+/*end styles for price*/
+
+/*start styles for contacts*/
+.contacts {
+    position: relative;
+    margin: 0;
+}
+
+.cotacts__info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 445px;
+    top: 60px;
+    right: 20px;    
+}
+
+.cotacts__info h2 {
+    background: transparent;
+    padding: 0;
+    padding-bottom: 40px;
+}
+
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name_email, .name_tel {
+    width: 450px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #BDAE82;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+.write_text {
+    width: 450px;
+    height: 100px;
+    resize: none;
+    border: 2px solid #BDAE82;
+    background: transparent;
+    margin-bottom: 30px;
+    color: inherit;
+}
+
+.form_item::placeholder {
+    font-family: var(--inter);
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    color: #bdae82;
+    padding-top: 3px;
+    padding-left: 18px;
+}
+/*end styles for contacts*/
+
+/*end styles for footer*/
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 0 20px;
+}
+
+.footer__info, .link_RSS {
+    display: flex;
+    gap: 20px;
+    font-size: 2.0rem;
+    line-height: 5.0rem;
+}
+
+.footer__info {
+    padding-right: 13px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.social__network {
+    display: flex;
+    width: 188px;
+    gap: 20px;
+}
+
+.social__network li {
+    list-style: none;
+}
+
+.footer_link {
+    cursor: pointer;
+    transition:color 0.5s;
+}
+
+.footer_link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+/*end styles for footer*/
