@@ -209,7 +209,7 @@ html {
 .skills__icon {
     padding-bottom: 50px;
 }
-.skills_item h3 {
+.skills_item h4 {
     font-weight: 700;
     font-size: 2.0rem;
     line-height: 4.0rem;
@@ -287,5 +287,53 @@ html {
 .video__button:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
-
 /*end styles for video*/
+
+/*start styles for price*/
+.price__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 25px;
+}
+
+.one__price {
+    width: 450px;
+    height: 505px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #BDAE82;
+}    
+
+.price__title {
+    font-family: var(--merriweather);
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 5.6rem;
+    padding-top: 41px;
+    padding-bottom: 20px;
+}
+
+.price__service {
+    font-family: var(--merriweather);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 4.8rem;
+    color: #BDAE82;
+    padding-bottom: 20px;
+}
+.one__price span {
+    display: block;
+}
+
+.price__text {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    text-align: center;
+}
+
+.price__description {
+    padding-bottom: 40px;
+}
+/*end styles for price*/
