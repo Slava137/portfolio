@@ -113,11 +113,20 @@ html {
 }
 /* end styles for header */
 
+.section {
+    margin-bottom: 100px;
+}
+
 /* start styles for hero */
+.hero {
+    margin-bottom: 0px;
+}
+
 .hero__container {
     background: url(assets/img/bg.jpg) no-repeat center;
     background-size: cover;
     margin-top: -90px;
+    margin-bottom: 94px;
 }
 
 .hero__title {
@@ -164,11 +173,6 @@ html {
 /* end styles for hero */
 
 /*start styles for skills*/
-#skills {
-    padding-top: 94px;
-    margin-bottom: 100px;
-}
-
 .section__title {
     font-family: var(--merriweather);
     font-weight: 700;
@@ -221,10 +225,6 @@ html {
 /*end styles for skills*/
 
 /*start styles for portfolios*/
-#portfolio {
-    margin-bottom: 100px;
-}
-
 .seasons {
     margin-bottom: 60px;
     display: flex;
@@ -263,3 +263,29 @@ html {
     max-height: 560px;
 }
 /*end styles for portfolio*/
+
+/*start styles for video*/
+.video__player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video__scrin {
+    padding: 0 20px;
+    max-width: 1400px;
+    max-height: 705px;
+}
+
+.video__button {
+    position: absolute;
+    cursor: pointer;
+    transition:color 0.5s;
+}
+
+.video__button:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+/*end styles for video*/
