@@ -118,15 +118,9 @@ html {
     width: 500px;
 }
 
-/* for all h1-h2 **/
-.section__title {
+.main__title {
     font-family: var(--merriweather);
     font-weight: 700;
-    color: #BDAE82;
-}
-/*end for all h1-h2*/
-
-.main__title {
     font-size: 6.0rem;
     line-height: 12.0rem;
     color: #FFFFFF;
@@ -145,13 +139,69 @@ html {
     width: 220px;
     height: 55px;
     padding: 0;
-    font-family: var(--inter);
-    font-weight: 400;
-    font-style: normal;
+    font-family: inherit;
     font-size: 2.0rem;
     line-height: 4.0rem;
     color: #000000;
     background-color: #BDAE82;
     border: 0;
+    cursor: pointer;
 }
 /* end styles for hero */
+
+/*start styles for skills*/
+#skills {
+    padding-top: 94px;
+}
+
+.section__title {
+    font-family: var(--merriweather);
+    font-weight: 700;
+    font-size: 4.0rem;
+    line-height: 8.0rem;
+    color: #BDAE82;
+    background-color: #000000;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.title__wrapper {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+    margin-bottom: 60px;
+}
+
+.skills__items {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.skills_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 320px;
+}
+
+.skills__icon {
+    padding-bottom: 50px;
+}
+.skills_item h3 {
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    width: 280px;
+    padding-bottom: 20px;
+}
+
+.skills__items p {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    padding: 0 20px 10px;
+}
+/*end styles for skills*/
