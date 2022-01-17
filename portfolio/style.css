@@ -337,3 +337,59 @@ html {
     padding-bottom: 40px;
 }
 /*end styles for price*/
+
+/*start styles for contacts*/
+.contacts {
+    position: relative;
+}
+
+.cotacts__info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 445px;
+    top: 60px;
+    right: 20px;    
+}
+
+.cotacts__info h2 {
+    background: transparent;
+    padding: 0;
+    padding-bottom: 40px;
+}
+
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name_email, .name_tel {
+    width: 450px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #BDAE82;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+.write_text {
+    width: 450px;
+    height: 100px;
+    resize: none;
+    border: 2px solid #BDAE82;
+    background: transparent;
+    margin-bottom: 30px;
+    color: inherit;
+}
+
+.form_item::placeholder {
+    font-family: var(--inter);
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    color: #bdae82;
+    padding-top: 3px;
+    padding-left: 18px;
+}
+/*end styles for contacts*/
