@@ -29,8 +29,7 @@ time, mark, audio, video {
 
 .container {
     width: 1440px;
-    margin: 0 auto;
-    background-color: #000000; 
+    margin: 0 auto;    
 }
 
 html {
@@ -40,6 +39,8 @@ html {
     font-size: 10px;
     line-height: 10px;
     color: #FFFFFF;
+    background-color: #000000; 
+    scroll-behavior: smooth; 
 }
 
 /* start styles for header */
@@ -56,7 +57,7 @@ html {
     margin-left: 20px;
     background-size: contain;
     background-repeat: no-repeat;  
-    transition: 0.3s;
+    transition: color 0.5s;
 }
 
 .logo:hover {
@@ -100,6 +101,14 @@ html {
 }
 
 .lang_item {
+    cursor: pointer;
+}
+
+.ru:hover {
+    color: #BDAE82;
+}
+
+.en {
     color: #BDAE82;
 }
 /* end styles for header */
@@ -146,12 +155,18 @@ html {
     background-color: #BDAE82;
     border: 0;
     cursor: pointer;
+    transition:color 0.5s;
+}
+
+.gold_button:hover {
+    color: #FFFFFF;
 }
 /* end styles for hero */
 
 /*start styles for skills*/
 #skills {
     padding-top: 94px;
+    margin-bottom: 100px;
 }
 
 .section__title {
@@ -175,9 +190,8 @@ html {
 
 .skills__items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-
-
 }
 
 .skills_item {
@@ -205,3 +219,47 @@ html {
     padding: 0 20px 10px;
 }
 /*end styles for skills*/
+
+/*start styles for portfolios*/
+#portfolio {
+    margin-bottom: 100px;
+}
+
+.seasons {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.black_button {
+    width: 220px;
+    height: 55px;
+    padding: 0;
+    font-family: inherit;
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    color: #BDAE82;
+    background-color: transparent;
+    border: 2px solid #BDAE82;
+    cursor: pointer;
+    transition:color 0.5s;
+}
+
+.black_button:hover {
+    color: #FFFFFF;
+}
+
+.photo {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+.autumn__image {
+    max-width: 450px;
+    max-height: 560px;
+}
+/*end styles for portfolio*/
