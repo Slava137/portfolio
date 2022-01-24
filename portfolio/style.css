@@ -285,11 +285,16 @@ html {
 
 .video__button {
     position: absolute;
-    cursor: pointer;
-    transition:color 0.5s;
+    background: transparent;
+    border: 0;
 }
 
-.video__button:hover {
+.img__button {
+    cursor: pointer;
+    transition:color 0.5s;    
+}
+
+.img__button:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 /*end styles for video*/
@@ -376,7 +381,6 @@ html {
     background: transparent;
     border: 2px solid #BDAE82;
     margin-bottom: 20px;
-    color: inherit;
 }
 
 .write_text {
@@ -386,7 +390,17 @@ html {
     border: 2px solid #BDAE82;
     background: transparent;
     margin-bottom: 30px;
-    color: inherit;
+}
+
+.form_item {
+    font-family: var(--inter);
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    padding-top: 3px;
+    padding-left: 18px;
+    color: #BDAE82;
+}
 }
 
 .form_item::placeholder {
@@ -394,7 +408,7 @@ html {
     font-weight: 400;
     font-size: 2.0rem;
     line-height: 4.0rem;
-    color: #bdae82;
+    color: #BDAE82;
     padding-top: 3px;
     padding-left: 18px;
 }
