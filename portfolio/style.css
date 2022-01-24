@@ -27,8 +27,13 @@ time, mark, audio, video {
     box-sizing: border-box;
 }
 
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;    
 }
 
@@ -128,7 +133,7 @@ html {
 }
 
 .hero__container {
-    background: url(assets/img/bg.jpg) no-repeat center;
+    background: url(assets/img/bg.jpg) no-repeat center 0;
     background-size: cover;
     margin-top: -90px;
     margin-bottom: 94px;
@@ -142,14 +147,13 @@ html {
 }
 
 .main__title {
-    font-family: var(--merriweather);
+   font-family: var(--merriweather);
     font-weight: 700;
     font-size: 6.0rem;
     line-height: 12.0rem;
     color: #FFFFFF;
     margin-bottom: 10px;
-
-}
+} 
 
 .hero p {
     font-size: 2.0rem;
@@ -275,13 +279,13 @@ html {
     justify-content: center;
     align-items: center;
     position: relative;
+    background: url(assets/img/video-player_scrin.jpg) no-repeat center 0;
+    background-size: cover;
+    width: 100%;
+    height: 705px;
+    padding: 0 20px;
 }
 
-.video__scrin {
-    padding: 0 20px;
-    max-width: 1400px;
-    max-height: 705px;
-}
 
 .video__button {
     position: absolute;
@@ -352,6 +356,10 @@ html {
 .contacts {
     position: relative;
     margin: 0;
+    background: url(assets/img/contact_me.jpg) no-repeat center 0;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
 }
 
 .cotacts__info {
@@ -400,7 +408,6 @@ html {
     padding-top: 3px;
     padding-left: 18px;
     color: #BDAE82;
-}
 }
 
 .form_item::placeholder {
@@ -459,3 +466,55 @@ footer a {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 /*end styles for footer*/
+
+/* start styles for devices with screen from 1439px for 769px*/
+@media (min-width: 769px) and (max-width: 1439px) {
+
+
+
+}
+/* end styles for devices with screen from 1439px for 769px*/
+
+/* start styles for devices with screen 768px*/
+@media (width: 768px) {
+
+    .logo {
+        margin-left: 60px;
+    }
+
+    .nav__top {
+        display: none;
+    }
+
+    .lang {
+        margin-left: auto;
+    }
+
+    .hero__container {
+        background: url(assets/img/bg_768px.jpg) no-repeat center 0;
+        background-size: auto;
+    }
+
+    .hero__title {
+        padding-top: 168px;
+        margin-left: 60px;
+        padding-bottom: 152px; 
+        width: 390px;
+    }
+
+    .main__title {
+         font-weight: 400;
+         font-size: 3.2rem;
+         line-height: 6.4rem;
+         margin-bottom: 20px;     
+     } 
+
+     .hero p {
+        line-height: 2.41rem;
+        width: 390px;
+        margin-bottom: 60px;
+    }
+
+
+}
+/* end styles for devices with screen 768px*/
