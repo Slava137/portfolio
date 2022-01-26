@@ -286,6 +286,9 @@ html {
     position: absolute;
     background: transparent;
     border: 0;
+    padding: 0;
+    padding-top: 3px;
+    padding-left: 2px;
 }
 
 .img__button {
@@ -520,7 +523,7 @@ footer a {
 
     .title__wrapper {
         width: 364px;
-        margin-bottom: 36px;
+        margin-bottom: 50px;
     }
 
     .section__title {        
@@ -531,7 +534,8 @@ footer a {
 
     .skills__items {
         justify-content: space-evenly;
-        padding: 0 20px;     
+        padding: 0 20px;
+        margin-top: -14px;                      /* т.к. в этой секции меньше отступ, чем под остальными заголовками */
     }
 
     .skills_item { 
@@ -542,9 +546,7 @@ footer a {
 
     .skills {
         margin-bottom: 93px;
-    }
-
-    
+    }    
 
     .skills__icon {
         padding-bottom: 30px;
@@ -553,6 +555,31 @@ footer a {
     .skills__items p {        
         line-height: 2.178rem;
         padding: 0 10px 40px;
+    }
+
+    .seasons {
+        padding: 0 50px;
+    }
+
+    .photo {
+        padding: 0;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .video__player {
+        background: url(assets/img/video-player_scrin_768px.jpg) no-repeat center 0;
+        height: 418px;
+        padding: 0;
+    }
+
+    .video__button {
+        padding-left: 0;
+        padding-right: 3px;
+    }
+
+    .img__button {
+        max-width: 64.6px;
     }
 
 
