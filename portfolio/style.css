@@ -355,12 +355,12 @@ html {
     position: relative;
     margin: 0;
     background: url(assets/img/contact_me.jpg) no-repeat center 0;
-    background-size: cover;
+    background-size: auto;
     width: 100%;
     height: 700px;
 }
 
-.cotacts__info {
+.contacts__info {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -370,7 +370,7 @@ html {
     right: 20px;    
 }
 
-.cotacts__info h2 {
+.contacts h2 {
     background: transparent;
     padding: 0;
     padding-bottom: 40px;
@@ -402,8 +402,7 @@ html {
     font-family: var(--inter);
     font-weight: 400;
     font-size: 2.0rem;
-    line-height: 4.0rem;
-    padding-top: 3px;
+    line-height: 4.0rem;    
     padding-left: 18px;
     color: #BDAE82;
 }
@@ -413,9 +412,7 @@ html {
     font-weight: 400;
     font-size: 2.0rem;
     line-height: 4.0rem;
-    color: #BDAE82;
-    padding-top: 3px;
-    padding-left: 18px;
+    color: #BDAE82;    
 }
 /*end styles for contacts*/
 
@@ -429,14 +426,16 @@ html {
     padding: 0 20px;
 }
 
-.footer__info, .link_RSS {
-    display: flex;
-    gap: 20px;
+.link_RSS {    
     font-size: 2.0rem;
     line-height: 5.0rem;
 }
 
-.footer__info {
+.footer__info {    
+    display: flex;
+    gap: 20px;
+    font-size: 2.0rem;
+    line-height: 5.0rem;
     padding-right: 13px;
 }
 
@@ -474,7 +473,7 @@ footer a {
 /* end styles for devices with screen from 1439px for 769px*/
 
 /* start styles for devices with screen 768px*/
-@media (width: 768px) {
+@media (max-width: 768px) {
 
     .logo {
         margin-left: 60px;
@@ -582,6 +581,68 @@ footer a {
         max-width: 64.6px;
     }
 
+    .price__items {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .one__price {
+        width: 420px;
+    }
+
+    .contacts {
+        background: url(assets/img/contact_me_768px.jpg) no-repeat center 0;
+        height: 600px;
+        margin: 0;
+    }
+
+    .contacts__info {
+        align-items: center;
+        height: 429px;
+        right: 159px;
+    }
+
+    .contacts_title {
+        font-size: 3.2rem;
+        line-height: 6.4rem;
+    }
+
+    .footer__container {
+        justify-content: start;
+        flex-direction: column;
+        height: 190px;
+        padding: 0;
+    }
+
+    .footer__info {
+        line-height: 2.42rem;
+        gap: 0;
+        padding-right: 0;
+        display: flex;
+        justify-content: space-evenly;
+        width: 210px;
+        padding-top: 28px;
+        padding-bottom: 16px;
+    }
+
+    .footer_year {
+        width: 52px;
+    }
+
+    .github_link {
+        width: 62px;
+    }
+
+   .link_RSS {
+        line-height: 2.42rem;
+        padding-bottom: 20px;
+    } 
+
+    .social__network {
+        height: 50px;
+        align-items: center;
+    }
 
 }
 /* end styles for devices with screen 768px*/
