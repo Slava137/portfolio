@@ -118,7 +118,7 @@ html {
     color: #BDAE82;
 }
 
-.en {
+.lang_item.active {
     color: #BDAE82;
 }
 
@@ -174,6 +174,20 @@ html {
 
 .gold_button:hover {
     color: #FFFFFF;
+}
+
+.prt_button.active {
+    width: 220px;
+    height: 55px;
+    padding: 0;
+    font-family: inherit;
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    color: #000000;
+    background-color: #BDAE82;
+    border: 0;
+    cursor: pointer;
+    transition:color 0.5s;
 }
 /* end styles for hero */
 
@@ -251,6 +265,8 @@ html {
     cursor: pointer;
     transition:color 0.5s;
 }
+
+
 
 .black_button:hover {
     color: #FFFFFF;
