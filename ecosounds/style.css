@@ -107,6 +107,15 @@ html {
     filter: brightness(.85);
 }
 
+.main__button.active {
+    background: url(assets/svg/pause.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 160px;
+    border: 0;
+    background-color: transparent;
+}
 /* start for footer */
 .footer__container {
     display: flex;
