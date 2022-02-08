@@ -17,4 +17,16 @@ mainBtn.addEventListener('click', function() {
     playAudio();
 })
 
+const navList = document.querySelector('.nav__list');
+const main = document.querySelector('.main');
+
+function changeBackground(event) {
+    if (event.target.classList.contains('nav__item')) {
+        main.style.backgroundImage = `url(./assets/img/${event.target.dataset.nav}.jpg)`;
+      }
+}
+
+navList.addEventListener('click', changeBackground);
+
+
 console.log('Извиняюсь, немного приболел. Постараюсь на днях доделать ещё функционал.\nПрошу просверить позже. Спасибо')
