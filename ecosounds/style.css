@@ -61,6 +61,10 @@ html {
     cursor: pointer;  
 }
 
+.logo.active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
 .link_item:hover {
     transition: 0.5s;
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
@@ -81,7 +85,14 @@ html {
     line-height: 5.0rem;
     cursor: pointer;    
 }
+.nav__item.active {
+    color: #BDAE82;
+}
 
+.nav__item.active:hover {
+    transition: 0.5s;
+    filter: invert(66%) brightness(82%) contrast(57%);
+}
 /* start for main */
 
 .main {
