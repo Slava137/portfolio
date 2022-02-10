@@ -29,12 +29,13 @@ mainBtn.addEventListener('click', function() {
 });
 
 function playAudio(){
-  if(!isPlay){
+  if (!isPlay) {
+      audio.src = `./assets/audio/forest.mp3`;
       audio.play();
       audio.currentTime = 0;
       isPlay = true;
   }
-  else{
+  else {
       audio.pause();
       isPlay = false;
   }
@@ -48,7 +49,7 @@ function playNavAudio(el){
     audio.currentTime = 0;
     isPlay = true;
     audio.play();    
-    mainBtn.classList.toggle('active');
+    mainBtn.classList.add('active');
   } else if (el.target.classList.contains('logo')) {
     audio.src = `./assets/audio/${el.target.dataset.nav}.mp3`;
     audio.currentTime = 0;
@@ -58,5 +59,3 @@ function playNavAudio(el){
   }
 }  
 headerList.addEventListener('click', playNavAudio);
-
-console.log('Извиняюсь, немного приболел. Постараюсь на днях доделать ещё функционал.\nПрошу просверить позже. Спасибо')
