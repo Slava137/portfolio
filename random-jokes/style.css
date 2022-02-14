@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@400;700&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, body,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;    
+}
+
+html {
+    font-family: 'Murecho', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #FFFFFF;
+    background-color: #ede2ff; 
+}
+
+.header__container {
+    display: flex;
+    justify-content: end;
+    height: 20px;
+    background-color: #8f8f8f;
+}
+
+.lang {
+    display: flex;
+    gap: 15px;
+    font-size: 2.0rem;
+    align-items: center;
+}
+
+.main__container {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__image {
+    background: url(assets/Van-Damme.svg);
+    background-size: contain;
+    height: 420px;
+    width: 320px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.main_button {
+    height: 30px;
+    width: 200px;
+    font-family: 'Murecho', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 2.0rem;
+    background-color: #8f8f8f;
+    cursor: pointer;
+    border: 0;
+}
+
+.main_button:hover {
+    color: #FFFFFF;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 40px;
+    background-color: #8f8f8f;    
+}
+
+.footer__info {
+    display: flex;
+    font-size: 2.0rem;
+    gap: 20px;
+}
+
+.github_link {
+    text-decoration: none;    
+    color: #FFFFFF;  
+}
+
+.rss_link {
+    background: url(assets/rss.svg);
+    background-size: contain;
+    width: 135px;
+    height: 50px;
+    text-decoration: none;       
+}
+
+.link_item:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
