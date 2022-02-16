@@ -40,29 +40,34 @@ html {
     font-size: 10px;
     line-height: 10px;
     color: #FFFFFF;
-    background-color: #ede2ff; 
 }
 
 .header__container {
     display: flex;
     justify-content: end;
-    height: 20px;
-    background-color: #8f8f8f;
+    height: 30px;
+    background-color: #413e3e;
 }
 
 .lang {
     display: flex;
     gap: 15px;
-    font-size: 2.0rem;
+    font-size: 2.0rem;    
     align-items: center;
 }
 
+.lang_item.active {
+    filter: invert(26%) sepia(25%) saturate(638%) hue-rotate(7deg) brightness(52%) contrast(67%);
+}
+
 .main__container {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 25px;
+    background-color: #FFFFFFF; 
 }
 
 .hero__image {
@@ -71,11 +76,19 @@ html {
     height: 420px;
     width: 320px;
     background-repeat: no-repeat;
-    margin-bottom: 10px;
+}
+
+.main_text {
+    font-size: 2.4rem;
+    line-height: 3.0rem;
+    font-weight: 700;
+    width: 90vw;
+    text-align: center;
+    color: #000000;
 }
 
 .main_button {
-    height: 30px;
+    height: 40px;
     width: 200px;
     font-family: 'Murecho', sans-serif;
     font-style: normal;
@@ -85,6 +98,7 @@ html {
     background-color: #8f8f8f;
     cursor: pointer;
     border: 0;
+    border-radius: 10px;
 }
 
 .main_button:hover {
@@ -96,8 +110,7 @@ html {
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    padding: 0 40px;
-    background-color: #8f8f8f;    
+    background-color: #413e3e;    
 }
 
 .footer__info {
@@ -119,8 +132,8 @@ html {
     text-decoration: none;       
 }
 
-.link_item:hover {
+.link_item:hover, .lang_item:hover {
     transition: 0.5s;
     cursor: pointer;
-    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    filter: invert(26%) sepia(25%) saturate(638%) hue-rotate(7deg) brightness(52%) contrast(67%);
 }
