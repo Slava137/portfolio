@@ -67,7 +67,7 @@ html {
     align-items: center;
     justify-content: center;
     gap: 25px;
-    background-color: #FFFFFFF; 
+    background-color: #FFFFFF; 
 }
 
 .hero__image {
@@ -136,4 +136,89 @@ html {
     transition: 0.5s;
     cursor: pointer;
     filter: invert(26%) sepia(25%) saturate(638%) hue-rotate(7deg) brightness(52%) contrast(67%);
+}
+
+
+@media (min-width: 1640px) and (max-width: 1920px) {
+    .header__container {
+        height: 50px;
+    }
+
+    .lang {
+        font-size: 2.8rem;
+    }
+
+    .main__container {
+        height: calc(100vh - 130px);
+    }
+
+    .hero__image {
+        height: 610px;
+        width: 500px;        
+    }
+
+    .main_text {
+        font-size: 3.0rem;
+        line-height: 3.6rem;
+    }
+
+    .main_button {
+        height: 50px;
+        width: 250px;
+        font-size: 2.6rem;
+        line-height: 2.2rem;        
+    }
+
+    .footer__container {
+        height: 80px;
+    }
+
+    .footer__info {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__container {
+        height: 20px;
+    }
+
+    .lang {
+        font-size: 1.8rem;        
+    }
+
+    .main__container {
+        height: calc(100vh - 70px);
+    }
+
+    .main_text {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .hero__image {
+        height: 320px;
+        width: 230px;        
+    }
+
+    .main_button {
+        height: 30px;
+        width: 180px;
+        font-size: 1.8rem;
+        line-height: 2.0rem;        
+    }
+
+    .footer__container {
+        height: 50px;
+    }
+
+    .footer__info {
+        font-size: 1.8rem;
+    }
+
+    .rss_link {      
+        background-repeat: no-repeat; 
+        width: 115px;
+        height: 40px;               
+    }
 }
