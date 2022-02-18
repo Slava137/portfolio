@@ -189,6 +189,7 @@ html {
 
     .main__container {
         height: calc(100vh - 70px);
+        gap: 20px;
     }
 
     .main_text {
@@ -222,3 +223,39 @@ html {
         height: 40px;               
     }
 }
+
+@media (max-width: 480px) {
+    .container {        
+        padding: 0 10px;    
+    }
+    
+    .main__container {
+        height: calc(100vh - 50px);
+        gap: 15px;
+    }
+
+    .hero__image {
+        height: 310px;
+        width: 220px;        
+    }
+
+    .main_text {
+        font-size: 1.5rem;
+        line-height: 2.0rem;
+    }
+
+    .footer__container {
+        height: 30px;
+    }
+
+    .footer__info {
+        font-size: 1.8rem;
+        gap: 12px;
+    }
+
+    .rss_link {
+        width: 105px;
+        height: 30px;
+        text-decoration: none;       
+    }
+}   
