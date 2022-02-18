@@ -35,6 +35,7 @@ window.addEventListener("load", getData);
 buttonEn.addEventListener('click', function() {
   buttonEn.classList.add('active');
   buttonRu.classList.remove('active');
+  button.textContent = 'Come on!';
   getData();
   playAudio();
 });
@@ -42,7 +43,7 @@ buttonEn.addEventListener('click', function() {
 buttonRu.addEventListener('click', function() {  
   buttonRu.classList.add('active');
   buttonEn.classList.remove('active');
-  button.textContent = 'Ну давай!'
+  button.textContent = 'Ну давай!';
   getQuotes();
   playAudio();
 });
