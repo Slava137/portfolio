@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@400;700&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, body,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;    
+}
+
+html {
+    font-family: 'Murecho', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #FFFFFF;
+    background-color: #000000; 
+}
+
+/* start for header */
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background: url(assets/svg/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;  
+}
+
+.logo.active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.link_item:hover {
+    transition: 0.5s;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    gap: 40px;
+}
+
+.nav__item {
+    list-style: none;
+    font-size: 2.0rem;
+    line-height: 5.0rem;
+    cursor: pointer;    
+}
+.nav__item.active {
+    color: #BDAE82;
+}
+
+.nav__item.active:hover {
+    transition: 0.5s;
+    filter: invert(66%) brightness(82%) contrast(57%);
+}
+/* start for main */
+
+.main {
+    background: url(assets/img/forest.jpg);
+    background-size: cover;
+    height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__button {
+    background: url(assets/svg/play.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 160px;
+    border: 0;
+    background-color: transparent;
+}
+
+.main__button:hover {
+    filter: brightness(.85);
+}
+
+.main__button.active {
+    background: url(assets/svg/pause.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 160px;
+    border: 0;
+    background-color: transparent;
+}
+/* start for footer */
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 40px;
+    background-color: #000000;    
+}
+
+.footer__info {
+    display: flex;
+    font-size: 2.0rem;
+    gap: 20px;
+}
+
+.github_link {
+    text-decoration: none;    
+    color: #FFFFFF;  
+}
+
+.rss_link {
+    background: url(assets/svg/rss.svg);
+    background-size: contain;
+    width: 135px;
+    height: 50px;
+    text-decoration: none;       
+}
